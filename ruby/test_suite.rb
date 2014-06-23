@@ -1,14 +1,16 @@
-def is_equal(a, b)
-  a == b
-end
+require_relative "person"
 
-def is_not_eqal(a, b)
-  a != b
-end
+  def is_equal(a, b)
+    a == b
+  end
 
-def tests_passed?(results)
-  results.collect{|r| r if r==false}.compact.empty?
-end
+  def is_not_equal(a, b)
+    a != b
+  end
+
+  def tests_passed?(results)
+    results.collect{|r| r if r==false}.compact.empty?
+  end
 
 ### DO NO EDIT BELOW THIS
 
